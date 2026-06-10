@@ -1,4 +1,6 @@
+$def with(prinum, segnum, resultado)
 <!DOCTYPE html>
+
 <html lang="es">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +11,27 @@
         <h1 align="center">Calculadora</h1>
         <hr>
 
-        <br><br><a href="/">Regresar al Incio</a>
+        <a  href="/">Regresar al Incio</a>
 
 
         <p align="center">Ingrese los datos</p>
 
         <form align="center" method="post">
             <label for="prinum">Primer número:</label><br>
-            <input type="number" id="prinum" name="prinum"><br>
+            <input type="number" id="prinum" name="prinum" value=$prinum><br>
             <label for="segnum">Segundo número:</label><br>
-            <input type="number" id="segnum" name="segnum"><br>
+            <input type="number" id="segnum" name="segnum" value=$segnum><br>
             <label for="resultado">Resultado de la operación:</label><br>
-            <input type="number" id="resultado" name="resultado"><br>
-            <button name="suma" id="suma"> Sumar</botton>
+            <input  type="number" id="resultado" name="resultado" value=$resultado><br>
+            <button name="operación" id="operación" value=sumar> Sumar</botton>
+            <button name="operación" id="operación" value=restar >Restar</button>
+            <button name="operación" id="operación" value=multiplicar >Multiplicacion</button>
+            <button name="operación" id="operación" value=Dividir >Dividir</button>
+            <button name="operación" id="operación" value=raiz >Raiz</button>
+            <button name="operación" id="operación" value=potencia >potencia</button>
+
+            
+        
         </form>
 
     </body>
